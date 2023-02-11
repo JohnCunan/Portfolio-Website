@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+:root {
+    --background-color: #00042B;
+}
+
+.NavigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.NavigationBar ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+.NavigationBar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding: 9px 20px;
+    border: var(--background-color) solid 1px;
+}
+
+.NavigationBar a:hover {
+    color: var(--background-color);
+    background-color: white;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.NavigationBar .Toggle {
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .NavigationBar ul {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+}
