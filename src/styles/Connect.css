@@ -88,6 +88,42 @@ input[type="submit"]:hover {
     transition: ease-in-out 0.15s;
 }
 
+.LoadingContainer {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.MessageModalContainer {
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0b2541;
+    border-radius: 20px;
+    border: #FFF solid 2px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MessageModalContainer h4 {
+    margin-top: 0;
+}
+
+.MessageModalContainer button {
+    color: #FFF;
+    background-color: #0b2541;
+    border-radius: 10px;
+    padding: 10px 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 470px) {
 
     input[type="text"] {
