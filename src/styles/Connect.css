@@ -50,6 +50,7 @@ input[type="text"] {
     border: none;
     border-radius: 5px;
     border: solid 1px #FFF;
+    font-family: "Courier New", monospace;
 }
 
 .EmailForm textarea {
@@ -64,6 +65,7 @@ input[type="text"] {
     border: solid 1px #FFF;
     border-radius: 5px;
     resize: none;
+    font-family: "Courier New", monospace;
 }
 
 input[type="submit"] {
