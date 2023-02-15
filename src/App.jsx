@@ -53,6 +53,3 @@ export default function App() {
     </div>
   )
 }
-
-// test 
-// test 2 

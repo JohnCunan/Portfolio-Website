@@ -50,6 +50,11 @@
     flex-direction: column;
 }
 
+.MainProjectContent {
+    display: flex;
+    gap: 30px;
+}
+
 .ProjectDescription h3 {
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
@@ -131,12 +136,20 @@
         max-width: 30px;
     }
 
+    .ProjectDescription {
+        margin-top: 20px;
+    }
+
     .ProjectDescription h3 {
         margin: 5px;
     }
 
     .ProjectDescription h4 {
         margin: 0px;
+    }
+
+    .MainProjectContent {
+        display: block;
     }
 
 }
