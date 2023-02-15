@@ -38,14 +38,33 @@
     margin: auto;
 }
 
+.NavMenu Button {
+    display: none;
+    color: #FFFF;
+}
+
+.NavMenu Button:hover {
+    background-color: #FFFF;
+    color: #00042B;
+}
+
+.MainFooterContainer p {
+    font-family: 'Rubik', sans-serif;
+}
 
 @media only screen and (max-width: 550px) {
 
+    .NavigationBar {
+        align-items: start;
+        justify-content: flex-start;
+    }
+
     .NavigationBar ul {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin: 0px;
+        display: none;
+    }
+
+    .NavMenu Button {
+       display: block;
     }
 
 }
