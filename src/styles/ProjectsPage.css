@@ -12,6 +12,13 @@
     /* outline: orange 1px solid; */
 }
 
+.ProjectContainer .ImageLoadingIcon {
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: var(--hovered-color);
+}
+
 .ProjectsSectionContainer .Title {
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
@@ -151,5 +158,12 @@
     .MainProjectContent {
         display: block;
     }
+
+    .ProjectContainer .ImageLoadingIconHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+    }    
 
 }

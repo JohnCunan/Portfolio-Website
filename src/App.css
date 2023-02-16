@@ -50,6 +50,8 @@
 
 .MainFooterContainer p {
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: #9ca1da;
 }
 
 @media only screen and (max-width: 550px) {

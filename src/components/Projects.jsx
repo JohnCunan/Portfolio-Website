@@ -1,4 +1,6 @@
 import '../styles/Projects.css'
+import { useState } from 'react'
+import LoadingIcon from '../material_ui_components/loading_icon'
 
 //Images
 import LandingApp from '../images/landing_page_app.png'
@@ -10,12 +12,24 @@ import GitHubIcon from '../images/github.png'
 import LinkIcon from '../images/link.png'
 
 export default function Projects() {
+
+    const [landingAppLoaded, setLandingAppLoaded] = useState(false);
+    const [weatherAppLoaded, setWeatherAppLoaded] = useState(false);
+    const [faceRecAppLoaded, setFaceRecAppLoaded] = useState(false);
+
+    const handleImageLoad = (setState) => () => {
+        setState(true);
+    };
+
     return(
         <div className='ProjectsSectionContainer'>
             <h2>Featured Projects</h2>
             {/* Projects Display */}
             <div className='ProjectContainer'>
-                <img src={LandingApp} />
+
+                {!landingAppLoaded  && <div className='ImageLoadingIconHome'><LoadingIcon/></div>}
+                <img src={LandingApp} onLoad={handleImageLoad(setLandingAppLoaded)} style={{ display: landingAppLoaded ? 'block' : 'none' }} />
+                
                 <div className='ProjectDescription'>
                     <h3>Epsorts Team Landing Page</h3>
                     <p>A landing page of an esports team which features the team's roster, achivements, and matches.</p>
@@ -28,7 +42,10 @@ export default function Projects() {
             </div>
 
             <div className='ProjectContainer'>
-                <img src={WeatherApp} />
+                
+                {!weatherAppLoaded && <div className='ImageLoadingIconHome'><LoadingIcon/></div>}
+                <img src={WeatherApp} onLoad={handleImageLoad(setWeatherAppLoaded)} style={{ display: weatherAppLoaded ? 'block' : 'none' }} />
+
                 <div className='ProjectDescription'>
                     <h3>Weather Forcast App</h3>
                     <p>A weather forcast app where you can view the current weather information of a searched city.</p>
@@ -41,7 +58,10 @@ export default function Projects() {
             </div>
 
             <div className='ProjectContainer'>
-                <img src={FaceRecApp} />
+                
+                {!faceRecAppLoaded && <div className='ImageLoadingIconHome'><LoadingIcon/></div>}
+                <img src={FaceRecApp} onLoad={handleImageLoad(setFaceRecAppLoaded)} style={{ display: faceRecAppLoaded ? 'block' : 'none' }} />
+                
                 <div className='ProjectDescription'>
                     <h3>Attendance System Using Face Recognition</h3>
                     <p>A capstone project which records the attendance of recognized employees to a payroll system.</p>

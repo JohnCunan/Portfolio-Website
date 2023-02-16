@@ -29,6 +29,13 @@
     margin: 20px 0px;
 }
 
+.ProjectContainer .ImageLoadingIconHome {
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: var(--hovered-color);
+}
+
 .ProjectContainer:hover {
     background-color: var(--hovered-color);
     transition: ease-in-out 0.2s;
@@ -103,4 +110,11 @@
         align-items: center;
     }
     
+    .ProjectContainer .ImageLoadingIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 150px;
+    }    
+
 }
