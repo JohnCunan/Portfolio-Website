@@ -95,6 +95,15 @@ input[type="submit"]:hover {
     font-family: 'Rubik', sans-serif;
 }
 
+.MessageModalBackground {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
 .MessageModalContainer {
     font-family: 'Rubik', sans-serif;
     position: fixed;
@@ -109,6 +118,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .MessageModalContainer h4 {

@@ -49,9 +49,11 @@ export default function Connect() {
                 </form>
             </div>
             {showSuccessSend && 
-                <div className='MessageModalContainer'>
+                <div className='MessageModalBackground'>
+                    <div className='MessageModalContainer'>
                     <h4>Your Message Was Successfully sent!</h4>
                     <button onClick={handleModal}>OK</button>
+                </div>
                 </div>
             }
         </div>
