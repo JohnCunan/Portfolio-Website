@@ -44,7 +44,7 @@
     background-color: #2a2d49;
     display: inline-block;
     margin: 0px;
-    padding: 10px 0px;
+    padding: 7px 0px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -57,7 +57,11 @@
 .PersonalInfo a {
     text-decoration: none;
     color: white;
-    padding: 10px 30px;
+    padding: 0px 30px;
+}
+
+.PersonalInfo span {
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,5 +1,6 @@
 import '../styles/MyInfo.css'
 import ProfilePic from '../../public/profile_pic.png'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function MyInfo() {
   return (
@@ -16,7 +17,8 @@ export default function MyInfo() {
               <a 
                 href='https://drive.google.com/file/d/1rlbcjeW1yk5xE3AL7f5e-udMBmp2Zt1x/view?usp=sharing' 
                 target={'_blank'}>
-                VIEW MY RESUME
+                VIEW MY RESUME 
+                <span style={{ verticalAlign: 'middle', display: 'inline-block' }}><OpenInNewIcon /></span>
               </a>
             </h4>
         </div>

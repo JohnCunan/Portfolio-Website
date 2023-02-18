@@ -14,6 +14,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
+import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 export default function App() {
 
@@ -78,7 +79,16 @@ export default function App() {
           <>
             <div className='InfoSection'><MyInfo /></div>
             <div className='ProjectsSection'><Projects /></div>
-            <h4 className='ViewMoreProjects' onClick={() => handleSectionChange("projects")}>View more projects</h4>
+            <h4 className='ViewMoreProjects' 
+              onClick={() => handleSectionChange("projects")}>View more projects
+              <span 
+                style={{ verticalAlign: 'middle', 
+                display: 'inline-block', 
+                marginLeft: '10px',
+                marginTop: '2px' }}>
+                <ReadMoreIcon />
+              </span>
+            </h4>
             <div className='SkillsSection'><Skills /></div>
             <div className='ConnectSection'><Connect /></div>
           </>
