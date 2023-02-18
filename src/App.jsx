@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import ProjectsPage from './components/ProjectsPage'
 import CertificationsPage from './components/CertificationsPage'
 import { useState } from 'react'
+import { CSSTransition } from 'react-transition-group';
 
 // Material UI
 import * as React from 'react';
@@ -75,8 +76,13 @@ export default function App() {
           </div>
       </nav>
       <main>
-        {activeSection === "home" && (
-          <>
+      <CSSTransition
+          in={activeSection === "home"}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
+          <div>
             <div className='InfoSection'><MyInfo /></div>
             <div className='ProjectsSection'><Projects /></div>
             <h4 className='ViewMoreProjects' 
@@ -91,17 +97,34 @@ export default function App() {
             </h4>
             <div className='SkillsSection'><Skills /></div>
             <div className='ConnectSection'><Connect /></div>
-          </>
-        )}
-        {activeSection === "projects" && (
+          </div>
+        </CSSTransition>
+        
+        <CSSTransition
+          in={activeSection === "projects"}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
           <div><ProjectsPage /></div>
-        )}
-        {activeSection === "certs" && (
+        </CSSTransition>
+        <CSSTransition
+          in={activeSection === "certs"}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
           <div><CertificationsPage /></div>
-        )}
-        {activeSection === "contacts" && (
+        </CSSTransition>
+        <CSSTransition
+          in={activeSection === "contacts"}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
           <div className='ConnectSection' style={{ marginTop: "60px" }}><Connect /></div>
-        )}
+        </CSSTransition>
+
       </main>
       <footer className='MainFooterContainer'>
         <Footer />
