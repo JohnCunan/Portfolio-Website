@@ -1,6 +1,4 @@
 import '../styles/ProjectsPage.css'
-import { useState } from 'react'
-import LoadingIcon from '../material_ui_components/loading_icon'
 
 //Images
 import LandingApp from '../images/landing_page_app.png'
@@ -10,22 +8,9 @@ import PayrollApp from '../images/payroll_app.png'
 import BlogApp from '../images/blog_app.png'
 import ColorApp from '../images/random_color_app.png'
 
-//Icons
-import GitHubIcon from '../images/github.png'
-import LinkIcon from '../images/link.png'
+import ProjectCard from './ProjectCard'
 
 export default function ProjectsPage() {
-
-    const [landingAppLoaded, setLandingAppLoaded] = useState(false);
-    const [weatherAppLoaded, setWeatherAppLoaded] = useState(false);
-    const [faceRecAppLoaded, setFaceRecAppLoaded] = useState(false);
-    const [payrollAppLoaded, setPayrollAppLoaded] = useState(false);
-    const [blogAppLoaded, setBlogAppLoaded] = useState(false);
-    const [colorAppLoaded, setColorAppLoaded] = useState(false);
-
-    const handleImageLoad = (setState) => () => {
-        setState(true);
-    };
 
     return(
         <div className='ProjectsSectionContainer'>
@@ -33,113 +18,66 @@ export default function ProjectsPage() {
             <p>A collection of projects I made throughout the years</p>
 
             {/* Projects Display */}
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                    
-                {!landingAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={LandingApp} onLoad={handleImageLoad(setLandingAppLoaded)} style={{ display: landingAppLoaded ? 'block' : 'none' }} />
+            <ProjectCard 
+                ProjectImage={LandingApp}
+                ProjectName="Epsorts Team Landing Page"
+                ProjectDescription="A landing page of an esports team which features the team's roster, achivements, and matches."
+                ProjectStack="ReactJS, Bootsrap, EmailJS"
+                ProjectRepoLink="https://github.com/JohnCunan/practice_website"
+                ProjectWebLink="https://psg-lgd-site.netlify.app/"
+                IsWebsite={true}
+            />
 
-                    <div className='ProjectDescription'>
-                        <h3>Epsorts Team Landing Page</h3>
-                        <p>A landing page of an esports team which features the team's roster, achivements, and matches.</p>
-                        <h4>ReactJS, Bootsrap, EmailJS</h4>
-                    </div>
-                </div>
-                <div className='ProjectLinks'>
-                    <a href="https://github.com/JohnCunan/practice_website" target={'_blank'}><img src={GitHubIcon}></img></a>
-                    <a href="https://psg-lgd-site.netlify.app/" target={'_blank'}><img src={LinkIcon}></img></a>
-                </div>
-            </div>
+            <ProjectCard 
+                ProjectImage={WeatherApp}
+                ProjectName="Weather Forcast App"
+                ProjectDescription="A weather forcast app where you can view the current weather information of a searched city."
+                ProjectStack="Vanilla JavaScript, OpenWeatherAPI"
+                ProjectRepoLink="https://github.com/JohnCunan/Weather-Forecast"
+                ProjectWebLink="https://johncunan.github.io/Weather-Forecast/"
+                IsWebsite={true}
+            />
 
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                    
-                {!weatherAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={WeatherApp} onLoad={handleImageLoad(setWeatherAppLoaded)} style={{ display: weatherAppLoaded ? 'block' : 'none' }} />
+            <ProjectCard 
+                ProjectImage={FaceRecApp}
+                ProjectName="Attendance System Using Face Recognition"
+                ProjectDescription="A capstone project which records the attendance of recognized employees to a payroll system."
+                ProjectStack="Python, SQL, OpenCV, Tkinter"
+                ProjectRepoLink="https://github.com/JohnCunan/Face-Recognition-Attendance-System"
+                ProjectWebLink=""
+                IsWebsite={false}
+            />
 
-                    <div className='ProjectDescription'>
-                        <h3>Weather Forcast App</h3>
-                        <p>A weather forcast app where you can view the current weather information of a searched city.</p>
-                        <h4>Vanilla JavaScript, OpenWeatherAPI</h4>
-                    </div>
-                </div>
-                <div className='ProjectLinks'>
-                    <a href="https://github.com/JohnCunan/Weather-Forecast" target={'_blank'}><img src={GitHubIcon}></img></a>
-                    <a href="https://johncunan.github.io/Weather-Forecast/" target={'_blank'}><img src={LinkIcon}></img></a>
-                </div>
-            </div>
+            <ProjectCard 
+                ProjectImage={PayrollApp}
+                ProjectName="Payroll System"
+                ProjectDescription="A capstone project which calculates salaries, manages employees and produces reports."
+                ProjectStack="C#, SQL"
+                ProjectRepoLink="https://github.com/JohnCunan/FionasFarmResortAdmin"
+                ProjectWebLink=""
+                IsWebsite={false}
+            />
 
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                       
-                {!faceRecAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={FaceRecApp} onLoad={handleImageLoad(setFaceRecAppLoaded)} style={{ display: faceRecAppLoaded ? 'block' : 'none' }} />
+            <ProjectCard 
+                ProjectImage={BlogApp}
+                ProjectName="Blog website"
+                ProjectDescription="A simple responsive blog website about gaming which displays random blogs."
+                ProjectStack="Vanilla JavaScript, HTML, CSS"
+                ProjectRepoLink="https://github.com/JohnCunan/Blog-Website"
+                ProjectWebLink="https://johncunan.github.io/Blog-Website/"
+                IsWebsite={true}
+            />
 
-                    <div className='ProjectDescription'>
-                        <h3>Attendance System Using Face Recognition</h3>
-                        <p>A capstone project which records the attendance of recognized employees to a payroll system.</p>
-                        <h4>Python, SQL, OpenCV, Tkinter</h4>
-                    </div>
-                </div>
-                <div className='ProjectLinks'>
-                    <a href='https://github.com/JohnCunan/Face-Recognition-Attendance-System' target={'_blank'}><img src={GitHubIcon}></img></a>
-                </div>
-            </div>
+            <ProjectCard 
+                ProjectImage={ColorApp}
+                ProjectName="Random Hex Color Code Generator"
+                ProjectDescription="A simple website that generates a random hex color code and allows you to copy the code on the clipboard."
+                ProjectStack="Vanilla JavaScript, HTML, CSS"
+                ProjectRepoLink="https://github.com/JohnCunan/HexCodeGenerator"
+                ProjectWebLink="https://johncunan.github.io/HexCodeGenerator/"
+                IsWebsite={true}
+            />
 
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                       
-                {!payrollAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={PayrollApp} onLoad={handleImageLoad(setPayrollAppLoaded)} style={{ display: payrollAppLoaded ? 'block' : 'none' }} />
-
-                    <div className='ProjectDescription'>
-                        <h3>Payroll System</h3>
-                        <p>A capstone project which calculates salaries, manages employees and produces reports.</p>
-                        <h4>C#, SQL</h4>
-                    </div>
-                </div>
-                <div className='ProjectLinks'>
-                    <a href='https://github.com/JohnCunan/FionasFarmResortAdmin' target={'_blank'}><img src={GitHubIcon}></img></a>
-                </div>
-            </div>
-
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                       
-                {!blogAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={BlogApp} onLoad={handleImageLoad(setBlogAppLoaded)} style={{ display: blogAppLoaded ? 'block' : 'none' }} />
-
-                    <div className='ProjectDescription'>
-                        <h3>Blog website</h3>
-                        <p>A simple responsive blog website about gaming which displays random blogs.</p>
-                        <h4>Vanilla JavaScript, HTML, CSS</h4>
-                    </div>
-                </div>
-                <div className='ProjectLinks'>
-                    <a href="https://github.com/JohnCunan/Blog-Website" target={'_blank'}><img src={GitHubIcon}></img></a>
-                    <a href="https://johncunan.github.io/Blog-Website/" target={'_blank'}><img src={LinkIcon}></img></a>
-                </div>
-            </div>
-
-            <div className='ProjectContainer'>
-                <div className='MainProjectContent'>
-                       
-                {!colorAppLoaded && <div className='ImageLoadingIcon'><LoadingIcon/></div>}
-                <img src={ColorApp} onLoad={handleImageLoad(setColorAppLoaded)} style={{ display: colorAppLoaded ? 'block' : 'none' }} />
-
-                    <div className='ProjectDescription'>
-                        <h3>Random Hex Color Code Generator</h3>
-                        <p>A simple website that generates a random hex color code and allows you to copy the code on the clipboard.</p>
-                        <h4>Vanilla JavaScript, HTML, CSS</h4>
-                    </div>
-                </div>
-                
-                <div className='ProjectLinks'>
-                    <a href="https://github.com/JohnCunan/HexCodeGenerator" target={'_blank'}><img src={GitHubIcon}></img></a>
-                    <a href="https://johncunan.github.io/HexCodeGenerator/" target={'_blank'}><img src={LinkIcon}></img></a>
-                </div>
-            </div>
-            
         </div>
     )
 }
