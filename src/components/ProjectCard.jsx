@@ -30,8 +30,12 @@ export default function ProjectCard(props) {
             <div className='ProjectLinks'>
                 <a href={props.ProjectRepoLink} target={'_blank'}><img src={GitHubIcon}></img></a>
                 { props.IsWebsite ? 
-                    <a href={props.ProjectWebLink} target={'_blank'}><img src={LinkIcon}></img></a> 
-                    : null}
+                    <a 
+                        href={props.ProjectWebLink} 
+                        target={'_blank'}><img 
+                        src={LinkIcon}></img>
+                    </a> 
+                : null}
             </div>
         </div>
     )
