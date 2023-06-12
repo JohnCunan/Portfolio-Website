@@ -31,6 +31,7 @@ export default function App() {
 
   const open = Boolean(anchorEl);
 
+  //Nav click
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
