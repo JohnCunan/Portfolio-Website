@@ -24,7 +24,7 @@ export default function Footer() {
                 <ul className='NavLinks'>
                     <Tooltip 
                         title={<Typography variant="subtitle1" style={{ fontSize: '16px' }}>
-                            Endeavor#7154</Typography>} placement="top" arrow>
+                            f.nando</Typography>} placement="top" arrow>
                         <li><p>Discord</p></li>
                     </Tooltip>
                     <li><a href="https://www.reddit.com/user/Rikonama" target={'_blank'}>Reddit</a></li>
