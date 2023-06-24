@@ -36,7 +36,7 @@ export default function Connect() {
                 <h3>Feel free to send me a message</h3>
                 <form ref={form} onSubmit={sendEmail} className='EmailForm'>
                     <label>Name</label>
-                    <input type="text" name="user_name" placeholder='Enter your name (optional)'/>
+                    <input type="text" name="from_name" placeholder='Enter your name (optional)'/>
                     <label>Message</label>
                     <textarea name="message" placeholder="Enter your message here..." />
                     <input type="submit" value="SEND"/>
