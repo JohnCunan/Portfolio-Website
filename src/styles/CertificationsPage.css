@@ -17,7 +17,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
-    /* flex-direction: column; */
+    /* UNCOMMENT THE FLEX WRAP WHEN THERE ARE MORE THAN 7 CERTS */
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 20px;
