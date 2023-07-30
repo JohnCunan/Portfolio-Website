@@ -7,11 +7,11 @@ export default function MyInfo() {
     <div className='MyInfoContainer'>
         <div className='PersonalInfo'>
             <h1>ULYSSES JOHN CUNAN</h1>
-            <h2>Front-End Developer</h2>
+            <h2>Junior Developer</h2>
             <p>
-              I'm a 4th year BSIT College student that is eager to learn and collaborate 
-              with a love for learning new things 
-              and making websites look awesome.
+              As a recent BSIT college graduate, I am an eager learner and collaborative team 
+              player with a passion for embracing new challenges. I am open to various 
+              opportunities within the development field. 
             </p>
             <h4>
               <a 

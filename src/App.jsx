@@ -129,7 +129,7 @@ export default function App() {
       </main>
       <footer className='MainFooterContainer'>
         <Footer />
-        <p>Made with 🔥 by Ulysses John Cunan</p>
+        <p>Made with ⚛️ by Ulysses John Cunan</p>
       </footer>
     </div>
   )
