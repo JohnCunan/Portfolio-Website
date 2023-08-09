@@ -15,7 +15,7 @@ export default function MyInfo() {
             </p>
             <h4>
               <a 
-                href='https://drive.google.com/file/d/1rlbcjeW1yk5xE3AL7f5e-udMBmp2Zt1x/view?usp=sharing' 
+                href='https://drive.google.com/file/d/1YsFVD6GYeCZNEnMsmuM3JHUv7qC3lJ8A/view?usp=sharing' 
                 target={'_blank'}>
                 VIEW MY RESUME 
                 <span style={{ verticalAlign: 'middle', display: 'inline-block' }}><OpenInNewIcon /></span>
