@@ -2,7 +2,7 @@ import '../styles/Projects.css'
 import ProjectCard from './ProjectCard'
 
 //Images
-import LandingApp from '../images/landing_page_app.png'
+import GamesListApp from '../images/games_list_app.png'
 import WeatherApp from '../images/weather_app.png'
 import FaceRecApp from '../images/face_recognition_app.png'
 
@@ -14,12 +14,12 @@ export default function Projects() {
             {/* Projects Display */}
 
             <ProjectCard 
-                ProjectImage={LandingApp}
-                ProjectName="Epsorts Team Landing Page"
-                ProjectDescription="A landing page of an esports team which features the team's roster, achivements, and matches."
-                ProjectStack="ReactJS, Bootsrap, EmailJS"
-                ProjectRepoLink="https://github.com/JohnCunan/practice_website"
-                ProjectWebLink="https://psg-lgd-site.netlify.app/"
+                ProjectImage={GamesListApp}
+                ProjectName="Free Games List App (Ongoing Project)"
+                ProjectDescription="A website which lists free-to-play games, where you can browse by platform or genre."
+                ProjectStack="ReactJS, MaterialUI, Axios"
+                ProjectRepoLink="https://github.com/JohnCunan/FreeGamesLists"
+                ProjectWebLink="https://johncunan.github.io/FreeGamesLists/"
                 IsWebsite={true}
             />
 

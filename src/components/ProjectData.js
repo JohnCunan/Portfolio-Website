@@ -5,6 +5,7 @@ import FaceRecApp from '../images/face_recognition_app.png'
 import PayrollApp from '../images/payroll_app.png'
 import BlogApp from '../images/blog_app.png'
 import ColorApp from '../images/random_color_app.png'
+import GamesListApp from '../images/games_list_app.png'
 
 export default [
     {
@@ -65,6 +66,16 @@ export default [
         ProjectStack: "Vanilla JavaScript, HTML, CSS",
         ProjectRepoLink: "https://github.com/JohnCunan/HexCodeGenerator",
         ProjectWebLink: "https://johncunan.github.io/HexCodeGenerator/",
+        IsWebsite: true
+    },
+    {
+        id: 7,
+        ProjectImage: GamesListApp,
+        ProjectName: "Free Games List App (Ongoing Project)",
+        ProjectDescription: "A website which lists free-to-play games, where you can browse by platform or genre.",
+        ProjectStack: "ReactJS, MaterialUI, Axios",
+        ProjectRepoLink: "https://github.com/JohnCunan/FreeGamesLists",
+        ProjectWebLink: "https://johncunan.github.io/FreeGamesLists/",
         IsWebsite: true
     }
 
