@@ -75,7 +75,7 @@ export default [
         ProjectDescription: "A website which lists free-to-play games, where you can browse by platform or genre.",
         ProjectStack: "ReactJS, MaterialUI, Axios",
         ProjectRepoLink: "https://github.com/JohnCunan/FreeGamesLists",
-        ProjectWebLink: "https://johncunan.github.io/FreeGamesLists/",
+        ProjectWebLink: "https://free-games-list.onrender.com",
         IsWebsite: true
     }
 
