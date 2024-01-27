@@ -10,7 +10,8 @@ export default function MyInfo() {
             <h2>Software Developer | IT Specialist</h2>
             <p>
               As a recent BSIT college graduate, I am an eager learner and collaborative team 
-              player with a passion for embracing new challenges. I am open to various 
+              player with a passion for embracing new challenges. Currently working as an
+              IT Specialist and a Freelance Software Developer I am open to various 
               opportunities within the development field. 
             </p>
             <h4>
