@@ -11,17 +11,16 @@ export default function MyInfo() {
             <p>
               As a recent BSIT college graduate, I am an eager learner and collaborative team 
               player with a passion for embracing new challenges. Currently working as an
-              IT Specialist and a Freelance Software Developer I am open to various 
-              opportunities within the development field. 
+              IT Specialist and a Freelance Software Developer. 
             </p>
-            <h4>
+            {/* <h4>
               <a 
                 href='https://drive.google.com/file/d/1YsFVD6GYeCZNEnMsmuM3JHUv7qC3lJ8A/view?usp=sharing' 
                 target={'_blank'}>
                 VIEW MY RESUME 
                 <span style={{ verticalAlign: 'middle', display: 'inline-block' }}><OpenInNewIcon /></span>
               </a>
-            </h4>
+            </h4> */}
         </div>
         <img src={ProfilePic} />
     </div>
