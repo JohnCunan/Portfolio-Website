@@ -13,6 +13,11 @@ import logoSql from '../images/logo_sql.png'
 import logoFigma from '../images/logo_figma.png'
 import logoPhotoshop from '../images/logo_photoshop.png'
 
+import logoAD from '../images/logo_ad.png'
+import logoMui from '../images/logo_mui.png'
+import logoZabbix from '../images/logo_zabbix.png'
+import logoMsAd from '../images/logo_msad.png'
+
 export default function Skills() {
     return (
         <div className='SkillsSectionContainer'>
@@ -29,6 +34,11 @@ export default function Skills() {
                 <img src={logoSql} />
                 <img src={logoFigma} />
                 <img src={logoPhotoshop} />
+
+                <img src={logoAD} />
+                <img src={logoMui} />
+                <img src={logoZabbix} />
+                <img src={logoMsAd} />
             </div>
         </div>
     )
