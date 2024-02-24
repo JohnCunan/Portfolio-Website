@@ -9,9 +9,9 @@ export default function MyInfo() {
             <h1>ULYSSES JOHN CUNAN</h1>
             <h2>IT Professional</h2>
             <p>
-              As a recent BSIT college graduate, I am an eager learner and collaborative team 
-              player with a passion for embracing new challenges. Currently working as an
-              IT Specialist. 
+              Hi! I'm a BSIT graduate, I am an eager learner and collaborative team 
+              player with a passion for embracing new challenges. Currently working as a
+              Jr. IT Specialist for a large sized company. 
             </p>
             {/* <h4>
               <a 
