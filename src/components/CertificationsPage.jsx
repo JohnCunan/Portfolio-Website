@@ -9,6 +9,7 @@ import cert3 from "../images/c3.png"
 import cert4 from "../images/c4.png"
 import cert5 from "../images/c5.png"
 import cert6 from "../images/c6.png"
+import cert7 from "../images/c7.png"
 
 export default function CertificationsPage() {
 
@@ -28,6 +29,7 @@ export default function CertificationsPage() {
           <img src={cert4} onLoad={handleImageLoad} style={loaded ? {} : { display: 'none' }} />
           <img src={cert5} onLoad={handleImageLoad} style={loaded ? {} : { display: 'none' }} />
           <img src={cert6} onLoad={handleImageLoad} style={loaded ? {} : { display: 'none' }} />
+          <img src={cert7} onLoad={handleImageLoad} style={loaded ? {} : { display: 'none' }} />
         </div>
     </div>
   )
