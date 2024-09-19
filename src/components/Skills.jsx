@@ -12,6 +12,7 @@ import logoBootstrap from '../images/logo_bootstrap.png'
 import logoSql from '../images/logo_sql.png'
 import logoFigma from '../images/logo_figma.png'
 import logoPhotoshop from '../images/logo_photoshop.png'
+import logoPhp from '../images/logo_php.png'
 
 import logoAD from '../images/logo_ad.png'
 import logoMui from '../images/logo_mui.png'
@@ -32,6 +33,7 @@ export default function Skills() {
                 <img src={logoCsharp} />
                 <img src={logoPython} />
                 <img src={logoSql} />
+                <img src={logoPhp} />
                 <img src={logoFigma} />
                 <img src={logoPhotoshop} />
 
